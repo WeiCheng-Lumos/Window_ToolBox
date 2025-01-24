@@ -36,7 +36,7 @@ npm install electron --save-dev
 ```
 安装成功后应有node_modules文件夹(内包含存储依赖包,配置项,版本管理,独立性包),package-lock.json文件更新
 国内镜像可能版本略老,本项目使用"electron:33.3.1"可在package-lock.json中查看
-由于node_modules文件过大,不会提交到git仓库
+由于node_modules文件过大,__因此不会提交到git仓库__，但运行项目不能缺少该文件
 ```
 #在.gitignore文件中添加
 node_modules/
