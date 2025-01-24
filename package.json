@@ -1,0 +1,20 @@
+{
+  "name": "windowfloat",
+  "version": "1.0.0",
+  "description": "a simple windowfloat APP",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "keywords": [],
+  "author": "SWC & ZWH",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "electron": "^33.3.1"
+  },
+  "dependencies": {}
+}
