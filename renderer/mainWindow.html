@@ -1,0 +1,91 @@
+<!-- renderer/mainWindow.html 首页-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline';">
+    <title>首页</title>
+    <link rel="stylesheet" href="mainWindow.css">
+</head>
+
+<body>
+    <div id="mainWindow" class="container">
+        <!-- 头栏 -->
+        <div id="mainWindowHeader" class="header">
+            <button id="minimize">-</button>
+            <button id="close">×</button>
+        </div>
+        <!-- 功能区 -->
+        <div class="functions">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <ul>
+                    <li class="active" data-tab="windowFloat">悬球</li>
+                    <li data-tab="listTool">清单</li>
+                    <li data-tab="translateTool">翻译</li>
+                    <li data-tab="func4">功能4</li>
+                    <li data-tab="Thanks">关于我们</li>
+                </ul>
+            </div>
+
+            <!-- 对应内容 -->
+            <div class="content">
+                <!-- 悬浮球（默认） -->
+                <div id="windowFloat" class="tab-content active">
+                    <h2>桌面悬浮球工具</h2>
+                    <div class="settings-item">
+                        <button id="openDeliverBall">快传悬浮球 🌟</button>
+                    </div>
+                    <div class="settings-item">
+                        <button id="openxxBall">XX悬浮球</button>
+                    </div>
+                </div>
+
+                <!-- 清单 -->
+                <div id="listTool" class="tab-content">
+                    <h2>桌面清单工具</h2>
+                    <div class="settings-item">
+                        <button id="openTodoList">待办 🌟</button>
+                    </div>
+                </div>
+
+                <!-- 翻译 -->
+                <div id="translateTool" class="tab-content">
+                    <h2>翻译工具</h2>
+                    <div class="settings-item">
+                        <input type="checkbox" id="select1">
+                        <label for="select1">选项测试1</label>
+                    </div>
+                    <div class="settings-item">
+                        <input type="checkbox" id="select2">
+                        <label for="select2">选项测试2</label>
+                    </div>
+                    <div class="settings-item">
+                        <input type="text" id="input" placeholder="输入测试">
+                    </div>
+                </div>
+
+                <!-- 功能4 -->
+                <div id="func4" class="tab-content">
+                    <h2>功能4</h2>
+                </div>
+
+                <!-- 我们 -->
+                <div id="Thanks" class="tab-content">
+                    <h2>关于我们</h2>
+                    <div class="settings-item">
+                        <p> 周WH & 邵WC DLUT
+                            <br>有待成为一款好用的桌面办公学习软件
+                            <br>感谢您的使用！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../renderer/mainWindow.js"></script>
+</body>
+
+</html>

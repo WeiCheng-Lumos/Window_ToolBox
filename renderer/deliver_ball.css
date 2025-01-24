@@ -1,0 +1,14 @@
+/* body {
+    background-color: #52ea16;
+} */
+
+.deliver_ball {
+    width: 50px;
+    height: 50px;
+    background-color: #c41abb;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    /* 鼠标指针 */
+    transition: transform 0.2s ease;
+}
